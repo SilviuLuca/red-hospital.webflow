@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,15 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-
-
-
-
-
-
     <title>Recumedis - Administrator</title>
-
-    <meta name="google-site-verification" content="GCJ3tXQYJMCWDaT-R5edBtN4tUAT1KwoFo2WHcGURkM" />
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -70,34 +64,95 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Dashboard
+                            Newsletter
 
                         </h1>
 
-
-                        <div style="display: inline-block;">
-
-                          <a href="admin-newsletter.php" style="width: 100%; display:inline-block; border-radius: 5px; padding: 60px; background-color: cyan; text-decoration: none; color:#fff;">Newsletter</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-12">
-
-
-
-
-
-
-
                     </div>
 
 
                     <div class="col-md-12">
-                        <h2></h2>
+
+                      <div class="trimite-newsletter">
+
+                          <a href="admin-newsletter-send.php" class="btn btn-primary">Creaza campanie</a>
+
+                      </div>
+              <!--          <h2>Adauga email si user</h2>
+                        <form action="admin-doctori-add.php" method="post" enctype="multipart/form-data">
+
+                            <label for="nume">Nume: </label>
+                            <input type="text" id="nume" name="nume" required size="100">
+
+                            <label for="nume">Functia: </label>
+                            <input type="text" id="functie" name="functie" required size="200">
+
+
+
+                            <label></label>
+                            <input name="submit" type="submit" value="Adauga" class="btn btn-primary">
+
+
+                        </form>
+                  -->
+                    </div>
+
+
+                    <div class="col-md-12 space1">
+
+
+
+                        <table class="table table-bordered table-hover">
+                            <tr>
+                             <th>Nume</th>
+                             <th>Email</th>
+                             <th>Telefon</th>
+                             <th>Data inregistrarii</th>
+                             </tr>
+
+
+                            <?php
+                                 require 'include-admin/db.php';
+
+                                $query = "SELECT * FROM newsletter";
+                                $select_all_doctori = mysqli_query ($connection,$query);
+
+                                while ($row = mysqli_fetch_assoc($select_all_doctori)) {
+                                    $newsletter_id = $row['id'];
+                                    $newsletter_nume = $row['nume'];
+                                    $newsletter_email = $row['email'];
+                                    $newsletter_telefon = $row['telefon'];
+                                    $newsletter_data = $row['data'];
+                                ?>
+
+
+
+
+
+                             <tr>
+                                <td><?php echo $newsletter_nume; ?></td>
+                                <td><?php echo $newsletter_email; ?></td>
+                                <td><?php echo $newsletter_telefon; ?></td>
+                                <td><?php echo $newsletter_data; ?></td>
+                            <td><a href="admin-newsletter-delete.php?delete=<?php echo $newsletter_id ?>" class="btn btn-danger" onclick="return confirm('Sigur vrei sa stergi?')">Stergere</a></td>
+                            <td><a href="admin-newsletter-edit.php?update=<?php echo $newsletter_id ?>" class="btn btn-success">Editare</a></td>
+                             </tr>
+
+                              <?php
+
+                                }
+                            ?>
+
+                        </table>
+
+
+
+
 
                     </div>
+
+
+
 
 
 

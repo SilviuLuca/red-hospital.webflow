@@ -17,9 +17,7 @@
             <li><a href="admin-angajari.php"><i class="fa fa-fw fa-edit"></i> Angajari</a></li>
             <li><a href="admin-gdpr.php"><i class="fa fa-fw fa-edit"></i> GDPR</a></li>
             <li><a href="admin-codetica.php"><i class="fa fa-fw fa-edit"></i> Cod etica</a></li>
-
-
-
+            <li><a href="admin-newsletter.php"><i class="fa fa-fw fa-edit"></i> Newsletter</a></li>
 
                 </ul>
             </div>

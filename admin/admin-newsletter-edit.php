@@ -9,15 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-
-
-
-
-
-
     <title>Recumedis - Administrator</title>
-
-    <meta name="google-site-verification" content="GCJ3tXQYJMCWDaT-R5edBtN4tUAT1KwoFo2WHcGURkM" />
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -58,7 +50,6 @@
             </div>
 
             <?php include 'include-admin/nav-admin.php'; ?>
-
             <!-- /.navbar-collapse -->
         </nav>
 
@@ -70,23 +61,109 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Dashboard
+                           Editeaza utilizatorul inregistrat
 
                         </h1>
 
-
-                        <div style="display: inline-block;">
-
-                          <a href="admin-newsletter.php" style="width: 100%; display:inline-block; border-radius: 5px; padding: 60px; background-color: cyan; text-decoration: none; color:#fff;">Newsletter</a>
-
-                        </div>
-
                     </div>
 
                     <div class="col-md-12">
 
 
 
+                       <div class="col-md-12">
+
+
+                        <?php
+
+                           include "include-admin/db.php";
+
+
+                           if (isset($_GET['update'])) {
+
+                                $newsletter_id = $_GET['update'];
+
+
+                            }
+
+                            $query = "SELECT * FROM newsletter WHERE id = {$newsletter_id} ";
+                            $update_query = mysqli_query($connection, $query);
+
+                            while ($row = mysqli_fetch_assoc($update_query)) {
+                                    $newsletter_nume = $row['nume'];
+                                    $newsletter_email = $row['email'];
+                                    $newsletter_telefon = $row['telefon'];
+
+                            }
+
+
+
+                           if (isset($_POST['submit'])) {
+                                $newsletter_nume = $_POST['nume'];
+                                $newsletter_email = $_POST['email'];
+                                $newsletter_telefon = $_POST['telefon'];
+
+
+                                $sql = "UPDATE newsletter SET nume='$newsletter_nume', email='$newsletter_email', telefon='$newsletter_telefon' WHERE id = '$newsletter_id'";
+
+
+                                $query = mysqli_query($connection, $sql);
+
+                               if (! $query) {
+                                   die("QUERY FAILED" . mysqli_error($connection));
+
+                               }
+
+
+                        ?>
+
+
+                            <script type="text/javascript">
+                                window.location = "admin-newsletter.php";
+                            </script>
+
+                        <?php
+
+                           }
+
+                        ?>
+
+
+
+                           <form action="" method="post" enctype="multipart/form-data">
+
+                            <label for="nume">Nume: </label>
+                            <input type="text" id="nume" name="nume" value = "<?php echo $newsletter_nume; ?>" required size="100">
+
+                            <label for="email">Email: </label>
+                            <input type="text" name="email" id="functie" value = "<?php echo $newsletter_email; ?>" required size="200">
+
+                            <label for="email">Telefon: </label>
+                            <input type="text" name="telefon" id="functie" value = "<?php echo $newsletter_telefon; ?>" required size="200">
+
+
+                            
+
+                            <label></label>
+                            <input name="submit" type="submit" value="Modifica" class="btn btn-primary">
+
+
+                        </form>
+
+
+
+
+
+
+
+
+                            <?php
+
+
+                                mysqli_close($connection);
+
+                            ?>
+
 
 
 
@@ -94,10 +171,12 @@
                     </div>
 
 
-                    <div class="col-md-12">
-                        <h2></h2>
+
 
                     </div>
+
+
+
 
 
 
