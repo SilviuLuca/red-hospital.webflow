@@ -126,7 +126,7 @@
   </div>
   <div class="spitale-informatii-generale">
     <div class="w-container">
-      <h3 class="heading-3"><strong>Sfaturi Medicale</strong></h3>
+      <h3 class="heading-3"><strong>Elemente media</strong></h3>
     </div>
   </div>
 

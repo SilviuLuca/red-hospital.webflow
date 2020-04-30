@@ -3,17 +3,6 @@
 <!--  Last Published: Thu Dec 05 2019 10:10:21 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5ddfa8c635741853a7c09b77" data-wf-site="5ddba24dd31f0f85cd6cc289">
 <head>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131420019-4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-131420019-4');
-  </script>
-  
   <meta charset="utf-8">
   <title>Recumedis Media</title>
   <meta content="blog" property="og:title">
@@ -120,7 +109,7 @@
           </a>
 
         <div class="div-block-9">
-          <h4><?php echo $blog_titlu; ?></h4>
+          <h4><?php echo $sfaturi_titlu; ?></h4>
           <div class="text-block-39">
               Postat: <span class="text-span-3"><?php echo $sfaturi_date; ?></span> -
               Autor: <span class="text-span-2">Recumedis</span> -
