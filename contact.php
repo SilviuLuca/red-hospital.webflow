@@ -12,7 +12,7 @@
 
     gtag('config', 'UA-131420019-4');
   </script>
-  
+
   <meta charset="utf-8">
   <title>contact</title>
   <meta content="contact" property="og:title">
@@ -29,6 +29,7 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
 
     <script src='https://www.google.com/recaptcha/api.js'></script>
+      <link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css"/><script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script><script>window.addEventListener("load", function(){window.wpcc.init({"border":"thin","corners":"small","colors":{"popup":{"background":"#222222","text":"#ffffff","border":"#b4eae4"},"button":{"background":"#b4eae4","text":"#000000"}},"position":"top","content":{"href":"https://www.recumedis.ro/gdpr.php","message":"Site-ul nostru utilizează module cookie proprii și de la partenerii noștri pentru a-ți îmbunătăți experiența și pentru a-ți afișa conținut sau anunțuri personalizate, relevante pentru tine.\n          Continuă să navighezi pe site sau alege să accepți dacă ești de acord cu utilizarea acestora.","button":"Accept!","link":"Detalii GDPR"},"pushdown":true})});</script>
 
 </head>
 
