@@ -99,13 +99,13 @@
 
   <div class="section">
 
-      <div class="w-container">
-          <div class="informare" style="margin-bottom: 5px; padding: 20px; text-align: justify; background-color: #30a5a1;
-    color: white;">
-
+    <!--  <div class="w-container">
+            <div class="informare" style="margin-bottom: 5px; padding: 20px; text-align: justify; background-color: #30a5a1; color: white;">
                 <p>Urmare a informării M.A.I. Covid-19 – Grupul de comunicare strategică, din data de 17.03.2020, privind măsurile generale pentru răspândirea noului tip de Coronavirus, activitatea <strong>Centrului de recuperare medicala și balneofizioterapie „Recumedis”</strong> se suspendă începând cu data de 18.03.2020 până la noi dispoziții. Informații suplimentare se pot obține la nr. de tel. 0785805167.</p>
             </div>
-        </div>
+          </div>
+
+      -->
 
       <div class="container-4 w-container">
 
