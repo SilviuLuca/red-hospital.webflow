@@ -7,6 +7,7 @@
         </div>
         <div class="column-2 w-col w-col-6">
           <div class="div-block-5">
+              <a href="comunicate.php" class="nav-bottom-link">Comunicate</a>
               <a href="cod-etica.php" class="nav-bottom-link">Cod Etica</a>
               <a href="gdpr.php" class="nav-bottom-link">GDPR</a>
               <a href="angajari.php" class="nav-bottom-link">Angajari</a>
