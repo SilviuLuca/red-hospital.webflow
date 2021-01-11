@@ -1546,9 +1546,10 @@
     width: 100%;
 }
 
-
-
-
+.rezultate {
+  display: inline-block;
+  width: auto;
+}
 
 
 @media (max-width: 991px) {
@@ -1577,6 +1578,13 @@
   .text-block-13 {
     font-size: 12px;
   }
+
+  .text-block-15 {
+    display: inline-block;
+    line-height: 40px;
+    margin: 2px;
+  }
+
   .nav-menu {
     background-color: #00b1c9;
     color: #fff;
@@ -1645,14 +1653,27 @@
 @media (max-width: 767px) {
         .text-blog-right { width: 100%; }
     .imagine-left { width: 100%; }
-    
+
   .first-line-top {
     height: auto;
   }
+
+  .rezultate {
+    display: inline-block;
+    width: 100%;
+  }
+
   .phone-program-first-line {
     width: 100%;
     text-align: center;
   }
+
+  .text-block-15 {
+    display: inline-block;
+    line-height: 40px;
+    margin: 2px;
+  }
+
   .container-3 {
     display: block;
   }
@@ -1771,10 +1792,10 @@
   .body {
     display: block;
   }
-    
 
-    
-    
+
+
+
   .phone-program-first-line {
     width: 100%;
   }
@@ -1829,6 +1850,14 @@
     display: none;
     line-height: 40px;
   }
+
+  .text-block-15 {
+    display: inline-block;
+    line-height: 40px;
+    margin: 2px;
+  }
+
+
   .slider {
     height: 200px;
   }
@@ -1914,5 +1943,3 @@
     margin-right: 10px;
     box-sizing: border-box;
 }
-
-
