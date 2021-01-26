@@ -18,7 +18,7 @@
       </a>
 
       <a href="http://clienti.recumedis.ro" target="_blank" class="link-block w-inline-block">
-        <div class="text-block-15 blanket">Acces Clienti</div>
+        <div class="text-block-15 blanket">Acces Clienti MM</div>
       </a>
 
 

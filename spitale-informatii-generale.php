@@ -29,25 +29,9 @@
     <link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css"/><script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script><script>window.addEventListener("load", function(){window.wpcc.init({"border":"thin","corners":"small","colors":{"popup":{"background":"#222222","text":"#ffffff","border":"#b4eae4"},"button":{"background":"#b4eae4","text":"#000000"}},"position":"top","content":{"href":"https://www.recumedis.ro/gdpr.php","message":"Site-ul nostru utilizează module cookie proprii și de la partenerii noștri pentru a-ți îmbunătăți experiența și pentru a-ți afișa conținut sau anunțuri personalizate, relevante pentru tine.\n          Continuă să navighezi pe site sau alege să accepți dacă ești de acord cu utilizarea acestora.","button":"Accept!","link":"Detalii GDPR"},"pushdown":true})});</script>
 </head>
 <body class="body-2">
-  <div class="first-line-top">
-    <div class="container-2 w-container">
-      <div class="phone-program-first-line">
-        <div class="text-block"></div><a href="tel:+40232230332" class="link">0232 230 332</a>
-        <div class="text-block-6"></div>
-        <div class="text-block-7">Lun-Vin 08:00 - 16:00</div>
-        <div class="text-block-8"></div>
-        <div class="text-block-9">office@sfsava.ro</div>
-      </div>
-      <div class="social-media-my-account"><a href="https://www.facebook.com/RedHospitalSpitalulSfSava/" class="social-buttons" target="_blank" class="social-buttons"></a>
-        <a href="spitale-formular-de-satistactie.php" target="_blank" class="link-block w-inline-block w--current">
-          <div class="text-block-15 formulare">Formulare</div>
-        </a>
-        <a href="http://clienti.recumedis.ro" target="_blank" class="link-block w-inline-block">
-          <div class="text-block-15">Acces Clienti</div>
-        </a>
-      </div>
-    </div>
-  </div>
+
+  <?php include 'includes/first-line.php'?>
+  
   <div class="logo-line">
     <div class="container-3 w-container"><a href="http://www.recumedis.ro" class="logo w-inline-block"><img src="images/hf.png" alt=""><div class="text-block-11">SPITALELE DE PALIAȚIE<br>ȘI RECUPERARE MEDICALĂ</div></a>
       <div class="div-block-2">
