@@ -12,6 +12,7 @@
             <li><a href="admin-promotii.php"><i class="fa fa-fw fa-edit"></i> Promotii</a></li>
             <li><a href="admin-media.php"><i class="fa fa-fw fa-edit"></i> Media</a></li>
             <li><a href="admin-blog.php"><i class="fa fa-fw fa-edit"></i> Blog</a></li>
+            <li><a href="admin-covid.php"><i class="fa fa-fw fa-edit"></i> COVID</a></li>
             <li><a href="admin-tarife.php"><i class="fa fa-fw fa-edit"></i> Tarife</a></li>
             <li><a href="admin-certificari.php"><i class="fa fa-fw fa-edit"></i> Certificari</a></li>
             <li><a href="admin-angajari.php"><i class="fa fa-fw fa-edit"></i> Angajari</a></li>

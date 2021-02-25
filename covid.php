@@ -15,8 +15,8 @@
   </script>
 
   <meta charset="utf-8">
-  <title>RedHospital - Blog</title>
-  <meta content="blog" property="og:title">
+  <title>RedHospital - COVID</title>
+  <meta content="COVID" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -58,12 +58,12 @@
   <div class="breadcrumb">
     <div class="container-8 w-container">
       <div class="text-block-24"></div>
-      <div class="text-block-22">Te afli aici: </div><a href="http://www.recumedis.ro" class="link-bread">Acasa</a>
-      <div class="text-block-23"> &gt;</div><a href="blog.php" class="link-bread">Blog</a></div>
+      <div class="text-block-22">Te afli aici: </div><a href="https://www.recumedis.ro" class="link-bread">Acasa</a>
+      <div class="text-block-23"> &gt;</div><a href="covid.php" class="link-bread">Covid</a></div>
   </div>
   <div class="spitale-informatii-generale">
     <div class="w-container">
-      <h3 class="heading-3"><strong>Blog</strong></h3>
+      <h3 class="heading-3"><strong>Covid</strong></h3>
     </div>
   </div>
 
@@ -74,16 +74,16 @@
 
 
 
-            $query = "SELECT * FROM blog ORDER BY `date` DESC";
-            $select_all_blog = mysqli_query ($connection,$query);
+            $query = "SELECT * FROM covid ORDER BY `date` DESC";
+            $select_all_covid = mysqli_query ($connection,$query);
 
-            while ($row = mysqli_fetch_assoc($select_all_blog)) {
-                $blog_titlu = $row['titlu'];
-                $blog_categorie = $row['categorie'];
-                $blog_imagine = $row['imagine'];
-                $blog_id = $row['id'];
-                $blog_date = $row['date'];
-                $blog_continut = $row['continut'];
+            while ($row = mysqli_fetch_assoc($select_all_covid)) {
+                $covid_titlu = $row['titlu'];
+                $covid_categorie = $row['categorie'];
+                $covid_imagine = $row['imagine'];
+                $covid_id = $row['id'];
+                $covid_date = $row['date'];
+                $covid_continut = $row['continut'];
 
 
         ?>
@@ -100,25 +100,25 @@
   <div class="section-6">
     <div class="w-container">
       <div class="articol-sfaturi-blog">
-          <a href="blog-detaliat.php?blog=<?php echo $blog_id; ?>" class="link-block-4 w-inline-block">
-              <img src="images/blog/<?php echo $blog_imagine; ?>" alt="">
+          <a href="covid-detaliat.php?covid=<?php echo $covid_id; ?>" class="link-block-4 w-inline-block">
+              <img src="images/covid/<?php echo $covid_imagine; ?>" alt="">
           </a>
 
         <div class="div-block-9">
-          <h4><?php echo $blog_titlu; ?></h4>
+          <h4><?php echo $covid_titlu; ?></h4>
           <div class="text-block-39">
-              Postat: <span class="text-span-3"><?php echo $blog_date; ?></span> -
+              Postat: <span class="text-span-3"><?php echo $covid_date; ?></span> -
               Autor: <span class="text-span-2">Recumedis</span> -
-              Categoria: <span class="text-span"><?php echo $blog_categorie; ?></span>
+              Categoria: <span class="text-span"><?php echo $covid_categorie; ?></span>
             </div>
 
           <div class="text-block-40">
 
-            <p><?php echo strip_tags(substr($blog_continut, 0, 500)) . "..."; ?></p>
+            <p><?php echo strip_tags(substr($covid_continut, 0, 500)) . "..."; ?></p>
 
           </div>
 
-            <a href="blog-detaliat.php?blog=<?php echo $blog_id; ?>" class="link-5">Mai multe...</a>
+            <a href="covid-detaliat.php?covid=<?php echo $covid_id; ?>" class="link-5">Mai multe...</a>
           </div>
       </div>
     </div>

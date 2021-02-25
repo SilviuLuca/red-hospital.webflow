@@ -155,7 +155,7 @@
 }
 
 .phone-program-first-line {
-  width: 50%;
+  width: 40%;
   float: left;
 }
 
@@ -220,7 +220,7 @@
 
 .social-media-my-account {
   display: inline-block;
-  width: 50%;
+  width: 60%;
   float: right;
   background-color: transparent;
   line-height: 40px;

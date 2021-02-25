@@ -10,8 +10,12 @@
               <a href="comunicate.php" class="nav-bottom-link">Comunicate</a>
               <a href="cod-etica.php" class="nav-bottom-link">Cod Etica</a>
               <a href="gdpr.php" class="nav-bottom-link">GDPR</a>
+              <a href="covid.php" class="nav-bottom-link">COVID-19</a>
+          </div>
+          <div class="div-block-5">
               <a href="angajari.php" class="nav-bottom-link">Angajari</a>
               <a href="spitale-certificari-si-autorizatii.php" class="nav-bottom-link">Certificari</a>
+
               <a href="sitemap.php" class="nav-bottom-link">Sitemap</a></div>
         </div>
       </div>

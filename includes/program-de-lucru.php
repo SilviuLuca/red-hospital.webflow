@@ -1,7 +1,7 @@
 
 
 
-      <!--
+
 
         <div class="program-header">
           <div class="text-block-16 triaj"></div>
@@ -31,6 +31,7 @@
             <div class="text-block-17">Închis</div>
           </div>
         </div>
+        <!--
         <div class="program-header">
           <div class="text-block-16 vizitatori"></div>
           <h5 class="heading">Program vizitatori</h5>
@@ -63,8 +64,12 @@
       -->
 
       <div class="program-header" style="text-align: justify;">
-        Pe perioada pandemiei de Covid-19 programul pentru vizitatori este suspendat în unitățile noastre spitalicești. <br>
-        Multumim pentru înțelegere!
+        <div class="text-block-16 triaj"></div>
+        <h5 class="heading">Program vizitatori</h5>
+        <div class="a122">
+          Pe perioada pandemiei de Covid-19 programul pentru vizitatori este suspendat în unitățile noastre spitalicești. <br>
+          Multumim pentru înțelegere!
+        </div>
       </div>
 
 
