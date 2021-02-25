@@ -173,12 +173,15 @@
 
 
 
+  <div class="section-2">
+      <div class="container-5 w-container">
+        <div class="program">
+          <?php include 'includes/program-de-lucru.php'; ?>
+        </div>
 
 
-  <?php include 'includes/program-de-lucru.php'; ?>
 
-
-    <div class="continut">
+    <div class="continut" style="position: relative;">
         <h3 class="heading-2">O afacere de suflet, creată de oameni pentru oameni</h3>
         <div class="text-block-20"><strong>Grija pentru oameni</strong> este <strong>misiunea</strong> care ne ghidează zi de zi în activitatea noastră. <br>Am pornit la drum cu o investiție de suflet deschizând spitalul "Sf. Sava", iar prin dedicare și profesionalism ne-am dezvoltat continuu. <br><br>Inițial, am abordat două specializări medicale complementare: îngrijirile paliative și recuperarea medicală, dorind să asigurăm tuturor pacienților, indiferent de stadiul bolii, o calitate cât mai bună a vieții.<br><br>Atenția la nevoile și dorințele pacienților ne-au determinat să ne extindem, astfel încât, în prezent, le oferim acestora servicii medicale de înaltă calitate în cadrul unităților noastre din Iași: <br>1. Spitalul "Sf. Sava", specializat în <strong>îngrijiri paliative</strong>;<br>2. Centrul Rezidențial "Sf. Anton", care oferă<strong> îngrijiri paliative</strong> pentru pacienții cu <strong>Alzheimer</strong> și alte forme de <strong>demență</strong>;<br>3. Baza de <strong>balneofiziokinetoterapie</strong> și <strong>recuperare medicală</strong> "Recumedis";<br>4. Laboratorul de analize medicale "Recumedis" - <strong>analize medicale decontate prin Casa de Asigurări de Sănătate Iași pe tot parcursul lunii</strong>;<br> 5. Cabinetul de <strong>medicina muncii</strong> "Recumedis".</div>
       </div>
@@ -191,7 +194,7 @@
 
 
 
-  <div class="section-3">
+  <div class="section-3" style="display:block;">
     <div class="w-container">
       <div class="columns-2 w-row">
         <div class="w-col w-col-4"><a href="#" class="w-inline-block"><img src="images/sfanton-round.png" alt=""></a></div>
@@ -200,6 +203,8 @@
       </div>
     </div>
   </div>
+
+
   <div class="section-4">
     <div class="container-6 w-container">
       <div class="text-block-21"><span>&quot;</span><em class="italic-text">Prin deschiderea spitalului, am întregit conceptul cu care am plecat la drum, în 1999, și anume grija față de semeni. Am știut că mă angajez la o muncă foarte grea, într-un domeniu despre care nu existau multe informații, iar investiția era greu de implementat. Cu toate acestea, pe baza planului de afaceri, fără a beneficia de fonduri europene sau finanțări nerambursabile, beneficiind doar de ajutorul Fondului Național de Garantare a Creditelor, care a garantat parțial creditul de cinci milioane de euro, am ridicat acest spital întins pe 12 nivele, cu 105 locuri în primul an, comparabil cu ce există în Uniunea Europeană. Chiar dacă știu că investiția se amortizează în 15 ani, am mulțumirea sufletească a lucrului bine făcut, în sprijinul semenilor mei.</em>&quot;</div>Fondator, <img src="images/signature.png" alt=""></div>
