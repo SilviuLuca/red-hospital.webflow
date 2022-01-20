@@ -30,7 +30,7 @@
     <link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css"/><script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script><script>window.addEventListener("load", function(){window.wpcc.init({"border":"thin","corners":"small","colors":{"popup":{"background":"#222222","text":"#ffffff","border":"#b4eae4"},"button":{"background":"#b4eae4","text":"#000000"}},"position":"top","content":{"href":"https://www.recumedis.ro/gdpr.php","message":"Site-ul nostru utilizează module cookie proprii și de la partenerii noștri pentru a-ți îmbunătăți experiența și pentru a-ți afișa conținut sau anunțuri personalizate, relevante pentru tine.\n          Continuă să navighezi pe site sau alege să accepți dacă ești de acord cu utilizarea acestora.","button":"Accept!","link":"Detalii GDPR"},"pushdown":true})});</script>
 </head>
 <body class="body-7">
-  
+
   <?php include 'includes/first-line.php'?>
 
   <div class="logo-line">
@@ -91,6 +91,9 @@
           <a data-w-tab="Tab 4" class="w-inline-block w-tab-link w--current">
             <div>Microbiologie</div>
           </a>
+          <a data-w-tab="Tab 5" class="w-inline-block w-tab-link w--current">
+            <div>Teste COVID</div>
+          </a>
         </div>
         <div class="w-tab-content">
           <div data-w-tab="Tab 1" class="w-tab-pane">
@@ -104,6 +107,9 @@
           </div>
           <div data-w-tab="Tab 4" class="w-tab-pane w--tab-active">
             <div><strong><em>Analize medicale exsudat faringian: </em></strong>(Cultura (inclusiv antibiograma pentru culturi pozitive); - Cultura fungi.)<br>‍<br>‍<strong>Analize medicale urină </strong>(Examen complet de urină (sumar + sediment); Examen microscopic colorat – Ziehl Neelsen; Urocultura (inclusiv antibiograma pentru culturi pozitive); Dozare glucoză urinară; Dozare proteine urinare; Test sarcină – urină.)<br>‍<br>‍<strong>Analize medicale materii fecale</strong> (Examen coproparazitologic (3 probe); Examen coprocitograma; Coprocultura (inclusiv antibiograma pentru culturi pozitive); Proba de digestie; Hemoragii oculte.)<br>‍<br>‍<strong>Examene secretii <br><em>1. Examene din secretii vaginale </em></strong>(Examen microscopic nativ; Examen microscopic colorat; Examen Babes-Papanicolau; Cultura; Cultura fungi inclusiv fungigrama pentru culturi pozitive.) <br>‍<strong><em>2. Examene din secretii uretrale, nazale, conjunctivale sau purulente, auriculare, oculare, sputa, lichid articular, peritoneal, pleural si LCR. </em></strong>(Examen microscopic colorat; Cultura (inclusiv antibiograma pentru culturi pozitive); Cultura germeni anaerobi (inclusiv antibiograma pentru culturi pozitive); Identificare bacteriană și fungică.<br><br>‍<strong>Analize medicale spermă</strong> (Spermocultura (inclusiv antibiograma pentru culturi pozitive); Spermogramă.)</div>
+          </div>
+          <div data-w-tab="Tab 5" class="w-tab-pane w--tab-active">
+            <div><strong><em> </div>
           </div>
         </div>
       </div>
