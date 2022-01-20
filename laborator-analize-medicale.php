@@ -109,7 +109,21 @@
             <div><strong><em>Analize medicale exsudat faringian: </em></strong>(Cultura (inclusiv antibiograma pentru culturi pozitive); - Cultura fungi.)<br>‍<br>‍<strong>Analize medicale urină </strong>(Examen complet de urină (sumar + sediment); Examen microscopic colorat – Ziehl Neelsen; Urocultura (inclusiv antibiograma pentru culturi pozitive); Dozare glucoză urinară; Dozare proteine urinare; Test sarcină – urină.)<br>‍<br>‍<strong>Analize medicale materii fecale</strong> (Examen coproparazitologic (3 probe); Examen coprocitograma; Coprocultura (inclusiv antibiograma pentru culturi pozitive); Proba de digestie; Hemoragii oculte.)<br>‍<br>‍<strong>Examene secretii <br><em>1. Examene din secretii vaginale </em></strong>(Examen microscopic nativ; Examen microscopic colorat; Examen Babes-Papanicolau; Cultura; Cultura fungi inclusiv fungigrama pentru culturi pozitive.) <br>‍<strong><em>2. Examene din secretii uretrale, nazale, conjunctivale sau purulente, auriculare, oculare, sputa, lichid articular, peritoneal, pleural si LCR. </em></strong>(Examen microscopic colorat; Cultura (inclusiv antibiograma pentru culturi pozitive); Cultura germeni anaerobi (inclusiv antibiograma pentru culturi pozitive); Identificare bacteriană și fungică.<br><br>‍<strong>Analize medicale spermă</strong> (Spermocultura (inclusiv antibiograma pentru culturi pozitive); Spermogramă.)</div>
           </div>
           <div data-w-tab="Tab 5" class="w-tab-pane w--tab-active">
-            <div><strong><em> </div>
+            <div>
+                <strong>TEST RAPID COVID-19 ANTIGEN (SARS-CoV-2) si TEST SEROLOGIC PENTRU DETERMINARE ANTICORPI IgM si IgG SARS-CoV-2</strong><br><br>
+                <strong>TESTELE RAPIDE DE DETERMINARE A ANTIGENULUI COVID-19 sunt utile pentru identificarea persoanelor care sunt infectate cu noul CORONAVIRUS  SARS COV-2.</strong><br>
+                  <em>Testul rapid de determinarea a Antigenului COVID-19 cu prelevare din bazinul nazal, poate fi recoltat in orice moment al zilei, are o precizie de ± 98%, iar rezultatul fiind obtinut in aceeasi zi.</em>
+              <br/><br/>
+
+              <strong>TESTELE SEROLOGICE PENTRU DETERMINARE ANTICORPI IgM si IgG SARS-CoV-2 sunt utile pentru identificarea persoanelor care au fost expuse anterior virusului.</strong><br/>
+              <em><strong>Anticorpii de tip IgM</strong> sunt detectabili in serul pacientilor incepand cu ziua 5-7 de la debutul simptomelor si incep sa scada la 10-14 zile dupa debutul simptomelor. <br/>
+                <strong>Anticorpii de tip IgG</strong> devin detectabili in ser incepand cu zilele 10-14 persistand si dupa debutul infectiei.</em><br/>
+                <em>Testul serologic pentru determinare antocorpi IgM și IgG SARS-CoV-2 cu recoltare proba sange, poate fi prelevat in orice moment al zilei, are o acuratete de ± 93%, iar rezultatul fiind obtinut in aceeasi zi.</em>
+                <br/><br/>
+
+                  <strong>Pentru clientii corporate, la incheierea unui contract, se pot negocia pachete personalizate cu discount, in functie de numarul de teste solicitate. </strong>
+
+            </div>
           </div>
         </div>
       </div>
