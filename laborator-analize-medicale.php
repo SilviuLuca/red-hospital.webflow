@@ -110,6 +110,7 @@
           </div>
           <div data-w-tab="Tab 5" class="w-tab-pane w--tab-active">
             <div>
+                  <div style="width: 100%; text-align: center;"><img src="images/test-covid.jpg" width="40%" alt="test-covid"></div>
                 <strong>TEST RAPID COVID-19 ANTIGEN (SARS-CoV-2) si TEST SEROLOGIC PENTRU DETERMINARE ANTICORPI IgM si IgG SARS-CoV-2</strong><br><br>
                 <strong>TESTELE RAPIDE DE DETERMINARE A ANTIGENULUI COVID-19 sunt utile pentru identificarea persoanelor care sunt infectate cu noul CORONAVIRUS  SARS COV-2.</strong><br>
                   <em>Testul rapid de determinarea a Antigenului COVID-19 cu prelevare din bazinul nazal, poate fi recoltat in orice moment al zilei, are o precizie de ± 98%, iar rezultatul fiind obtinut in aceeasi zi.</em>
