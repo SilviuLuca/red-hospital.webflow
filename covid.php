@@ -114,7 +114,7 @@
 
           <div class="text-block-40">
 
-            <p><?php echo strip_tags(substr($covid_continut, 0, 500)) . "..."; ?></p>
+            <p><?php echo strip_tags(substr($covid_continut, 0, 2500)) . "..."; ?></p>
 
           </div>
 

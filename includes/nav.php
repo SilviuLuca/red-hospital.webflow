@@ -22,5 +22,6 @@
             <a href="tarife.php" class="menu-buttons w-nav-link">Tarife</a>
             <a href="blog.php" class="menu-buttons w-nav-link">Blog</a>
             <a href="media.php" class="menu-buttons w-nav-link">Media</a>
+            <a href="pacienti.php" class="menu-buttons w-nav-link">Pacienti</a>
             <a href="contact.php" class="menu-buttons w-nav-link">Contact</a>
         </nav>

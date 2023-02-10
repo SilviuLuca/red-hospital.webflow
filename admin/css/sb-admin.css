@@ -54,9 +54,9 @@ body {
 }
 
 .top-nav>li>a {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    line-height: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    line-height: 0px;
     color: #999;
 }
 
@@ -142,7 +142,7 @@ ul.alert-dropdown {
 
 .side-nav>li>ul>li>a {
     display: block;
-    padding: 10px 15px 10px 38px;
+    padding: 5px 10px 5px 18px;
     text-decoration: none;
     color: #999;
 }

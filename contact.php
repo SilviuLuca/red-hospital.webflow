@@ -36,7 +36,7 @@
 
 
 <body class="body-12">
-  
+
   <?php include 'includes/first-line.php'?>
 
   <div class="logo-line">
@@ -76,17 +76,18 @@
     <div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-6">
-          <div class="text-block-41"><strong>Spitalul Sf. Sava<br>‍</strong>Localizare: Strada Mitropolit Varlaam, nr. 10, Iași.<br>Telefon: 0232/230.332, 0332/882.865<br>Fax: 0332/882.932<br>E-mail: office@sfsava.ro, paliatie@sfsava.ro<br><br>‍<strong>Centrul Rezidențial Sf. Anton</strong> <br>Localizare: Aleea Piatra Sfântă, nr. 33, Iași.<br>Telefon: 0232/230.332, 0332/882.865<br>Fax: 0332/882.932<br>E-mail: office@sfsava.ro<br><br>‍<strong>Spitalul de recuperare Recumedis</strong> <br>Localizare: Strada Mitropolit Varlaam, nr. 10, Iași.<br>Telefon: 0332/882.864<br>Fax: 0332/882.932<br>E-mail: office@recumedis.ro<br><br>‍
+          <div class="text-block-41">
 
-              <strong>Laboratorul de analize Recumedis</strong><br>Localizare: strada Mitropolit Varlaam, nr. 10, Iași.<br>Telefon: 0332/882865, interior 103<br>Fax: 0332/882.932<br>E-mail: secretariat@recumedis.ro<br><br>‍<strong>Cabinetul de medicina muncii Recumedis</strong> <br>Localizare: Strada Mitropolit Varlaam, nr. 10, Iași.<br>Telefon: 0332/882.865, interior 124<br>Fax: 0332/882.932<br>E-mail: secretariat@recumedis.ro  <br><br>‍
-
-              <strong>SC RED HOSPITAL SRL</strong><br>Sediu: Bucuresti, sector 4 , Bd. Constantin Brancoveanu, nr. 114, bloc. M1/1, scara 7, etaj 8, ap. 295<br>CIF: 16877518<br>Punct de lucru: Iasi, str. M. Varlaam, nr. 10, C1 cu D+P+10 etaje, jud. Iasi<br>Număr de ordine la Registrul Comerțului:  J40/8091/09.06.2016<br>RO87WBAN00991V067091RO01<br>Intesa SanPaolo <br><br>‍
-
-
-
-              <strong>SC RECUMEDIS SRL</strong><br>Iași, Strada MITROPOLIT VARLAAM  nr. 10, județul Iași<br>CUI: 19164470<br>Număr de ordine la Registrul Comerțului: J22/2707/2006<br>RO29BREL190035411RO11001<br>LIBRA BANK Iași</div>
+            <strong>Spitalul Sf. Sava<br>‍</strong>Localizare: Strada Mitropolit Varlaam, nr. 10, Iași.<br>Telefon: 0232/230.332, 0332/882.865<br>Fax: 0332/882.932<br>E-mail: office@sfsava.ro, paliatie@sfsava.ro<br><br>‍
+            <strong>Manager Samoila Iulia<br>‍</strong>Telefon: 0785.805.167 <br>E-mail: manager@sfsava.ro <br>Program audiente:<br>Marti: 10:00 - 16:00 <br>Joi: 14:00 - 16:00<br><br>‍
+            <strong>Director Medical Dr. Albu Alina Elena<br>‍</strong>Telefon: 0753.313.034<br>Program audiente: <br>Marti: 09:00 - 11:00<br><br>‍
+            <strong>Centrul Rezidențial Sf. Anton</strong> <br>Localizare: Aleea Piatra Sfântă, nr. 33, Iași.<br>Telefon: 0232/230.332, 0332/882.865<br>Fax: 0332/882.932<br>E-mail: office@sfsava.ro<br><br>
+            ‍<strong>Spitalul de recuperare Recumedis</strong> <br>Localizare: Strada Mitropolit Varlaam, nr. 10, Iași.<br>Telefon: 0332/882.864<br>Fax: 0332/882.932<br>E-mail: office@recumedis.ro<br><br>‍
+            <strong>Laboratorul de analize Recumedis</strong><br>Localizare: strada Mitropolit Varlaam, nr. 10, Iași.<br>Telefon: 0332/882865, interior 103<br>Fax: 0332/882.932<br>E-mail: secretariat@recumedis.ro<br><br>
+            ‍<strong>Cabinetul de medicina muncii Recumedis</strong> <br>Localizare: Strada Mitropolit Varlaam, nr. 10, Iași.<br>Telefon: 0332/882.865, interior 124<br>Fax: 0332/882.932<br>E-mail: secretariat@recumedis.ro  <br><br>‍
+            <strong>SC RED HOSPITAL SRL</strong><br>Sediu: Bucuresti, sector 4 , Bd. Constantin Brancoveanu, nr. 114, bloc. M1/1, scara 7, etaj 8, ap. 295<br>CIF: 16877518<br>Punct de lucru: Iasi, str. M. Varlaam, nr. 10, C1 cu D+P+10 etaje, jud. Iasi<br>Număr de ordine la Registrul Comerțului:  J40/8091/09.06.2016<br>RO87WBAN00991V067091RO01<br>Intesa SanPaolo <br><br>‍
+            <strong>SC RECUMEDIS SRL</strong><br>Iași, Strada MITROPOLIT VARLAAM  nr. 10, județul Iași<br>CUI: 19164470<br>Număr de ordine la Registrul Comerțului: J22/2707/2006<br>RO29BREL190035411RO11001<br>LIBRA BANK Iași</div>
         </div>
-
 
 
 
