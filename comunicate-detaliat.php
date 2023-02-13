@@ -1,7 +1,33 @@
+<?php include 'includes/db.php'; ?>
+
+
+ <?php
+
+
+        if (isset($_GET['comunicate'])) {
+
+            $comunicate_id = $_GET['comunicate'];
+            $query = "SELECT * FROM comunicate WHERE id = {$comunicate_id} ";
+            $select_comunicate = mysqli_query ($connection,$query);
+
+        }
+
+        while ($row = mysqli_fetch_assoc($select_comunicate)) {
+
+            $comunicate_interogat_titlu = $row['titlu'];
+            $comunicate_interogat_categorie = $row['categorie'];
+            $comunicate_interogat_imagine = $row['imagine'];
+            $comunicate_interogat_tags = $row['tags'];
+            $comunicate_interogat_date = $row['date'];
+            $comunicate_interogat_continut = $row['continut'];
+            $comunicate_interogat_id = $row['id'];
+
+        ?>
+
+
 <!DOCTYPE html>
-<!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Thu Dec 05 2019 10:10:21 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="5ddfa8c635741853a7c09b77" data-wf-site="5ddba24dd31f0f85cd6cc289">
+
+<html>
 <head>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -14,9 +40,17 @@
     gtag('config', 'UA-131420019-4');
   </script>
 
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <meta property="og:image" content="http://recumedis.ro/images/comunicate/<?php echo $comunicate_interogat_imagine; ?>" />
+    <meta property="og:title" content="RedHospital - Comunicate" >
   <meta charset="utf-8">
-  <title>RedHospital - Comunicate</title>
-  <meta content="blog" property="og:title">
+  <title><?php echo $comunicate_interogat_titlu; ?></title>
+
+
+
+
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -32,8 +66,19 @@
 </head>
 <body class="body-11">
 
-  <?php include 'includes/first-line.php'?>
 
+    <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <?php include 'includes/first-line.php'?>
   <div class="logo-line">
     <div class="container-3 w-container"><a href="http://www.recumedis.ro" class="logo w-inline-block"><img src="images/hf.png" alt=""><div class="text-block-11">SPITALELE DE PALIAȚIE<br>ȘI RECUPERARE MEDICALĂ</div></a>
       <div class="div-block-2">
@@ -59,78 +104,62 @@
     <div class="container-8 w-container">
       <div class="text-block-24"></div>
       <div class="text-block-22">Te afli aici: </div><a href="http://www.recumedis.ro" class="link-bread">Acasa</a>
-      <div class="text-block-23"> &gt;</div><a href="comunicate.php" class="link-bread">Comunicate</a></div>
+      <div class="text-block-23"> &gt;</div><a href="comunicate.php" class="link-bread">Comunicate</a>
+      <div class="text-block-23"> &gt;</div><a href="comunicate-detaliat.php?comunicate=<?php echo $comunicate_interogat_id; ?>" class="link-bread"><?php echo $comunicate_interogat_titlu; ?></a></div>
   </div>
   <div class="spitale-informatii-generale">
     <div class="w-container">
-      <h3 class="heading-3"><strong>Comunicate</strong></h3>
+      <h3 class="heading-3"><strong>Comunciate</strong></h3>
     </div>
   </div>
+
+    <?php }; ?>
 
     <?php
             include 'includes/db.php';
 
 
 
-
-
-            $query = "SELECT * FROM comunicate ORDER BY `date` DESC";
-            $select_all_comunicate = mysqli_query ($connection,$query);
-
-            while ($row = mysqli_fetch_assoc($select_all_comunicate)) {
-                $comunicate_titlu = $row['titlu'];
-                $comunicate_categorie = $row['categorie'];
-                $comunicate_imagine = $row['imagine'];
-                $comunicate_id = $row['id'];
-                $comunicate_date = $row['date'];
-                $comunicate_continut = $row['continut'];
-
-
-        ?>
-
-
-
-
-
-
-
-
+      ?>
 
 
   <div class="section-6">
     <div class="w-container">
-      <div class="articol-sfaturi-blog">
-          <a href="comunicate-detaliat.php?comunicate=<?php echo $comunicate_id; ?>" class="link-block-4 w-inline-block">
-              <img src="images/comunicate/<?php echo $comunicate_imagine; ?>" alt="">
-          </a>
 
-        <div class="div-block-9">
-          <h4><?php echo $comunicate_titlu; ?></h4>
+
+
+        <div class="div-block-9 all-blog-text">
+          <h4><?php echo $comunicate_interogat_titlu; ?></h4>
           <div class="text-block-39">
-              Postat: <span class="text-span-3"><?php echo $comunicate_date; ?></span> -
+              Postat: <span class="text-span-3"><?php echo $comunicate_interogat_date; ?></span> -
               Autor: <span class="text-span-2">Recumedis</span> -
-              Categoria: <span class="text-span"><?php echo $comunicate_categorie; ?></span>
+              Categoria: <span class="text-span"><?php echo $comunicate_interogat_categorie; ?></span>
             </div>
 
           <div class="text-block-40">
 
-            <p><?php echo strip_tags(substr($comunicate_continut, 0, 3500)) . "..."; ?></p>
+
+              <div class="imagine-left"><img src="images/comunicate/<?php echo $comunicate_interogat_imagine; ?>" alt="" width="320px"></div>
+              <div class="text-blog-right"><p><?php echo $comunicate_interogat_continut; ?></p>
+
+              <div class="fb-share-button" data-href="http://www.recumedis.ro/comunicate-detaliat.php?comunicate=<?php echo $comunicate_id; ?>" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+
+              </div>
+
+
 
           </div>
 
-            <a href="comunicate-detaliat.php?comunicate=<?php echo $comunicate_id; ?>" class="link-5">Mai multe...</a>
+
+
           </div>
       </div>
     </div>
-  </div>
 
 
 
-      <?php
 
-            }
-
-          ?>
 
 
 

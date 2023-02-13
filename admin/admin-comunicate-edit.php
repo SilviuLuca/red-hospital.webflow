@@ -28,7 +28,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link href="dist/summernote.min.css" rel="stylesheet">
+    <script src="//cdn.ckeditor.com/4.11.1/full/ckeditor.js"></script>
 
 </head>
 
@@ -61,7 +61,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                           Editeaza comunicat de presa
+                           Editeaza comunicat
 
                         </h1>
 
@@ -76,7 +76,7 @@
 
                         <?php
 
-                           require "include-admin/db.php";
+                           include "include-admin/db.php";
 
 
                            if (isset($_GET['update'])) {
@@ -91,8 +91,10 @@
                             while ($row = mysqli_fetch_assoc($update_query)) {
                                     $comunicate_categorie = $row['categorie'];
                                     $comunicate_titlu = $row['titlu'];
+                                    $comunicate_fotografie = $row['imagine'];
                                     $comunicate_id = $row['id'];
                                     $comunicate_continut = $row['continut'];
+                                    $comunicate_tags = $row['tags'];
 
                             }
 
@@ -102,9 +104,33 @@
 
                                 $categorie = $_POST['categorie'];
                                 $titlu = $_POST['titlu'];
+                                $imagine = $_FILES['imagine']['name'];
+                                $imagine_tmp = $_FILES['imagine']['tmp_name'];
                                 $continut = mysqli_real_escape_string($connection, $_POST['content']);
+                                $tags = $_POST['tags'];
 
-                                $sql = "UPDATE comunicate SET categorie='$categorie', titlu='$titlu', continut='$continut' WHERE id = '$update_comunicate_id'";
+
+
+
+                               $target = "../images/comunicate/" . basename($_FILES['imagine']['name']);
+                               move_uploaded_file($_FILES['imagine']['tmp_name'], $target);
+
+
+                               if(empty($imagine)) {
+
+                                   $query = "SELECT * FROM comunicate WHERE id = {$update_comunicate_id} ";
+                                   $select_image = mysqli_query($connection, $query);
+
+                                   while($row = mysqli_fetch_array($select_image)) {
+                                      $imagine = $row['imagine'];
+                                   }
+
+
+                                }
+
+
+
+                                $sql = "UPDATE comunicate SET categorie='$categorie', titlu='$titlu', imagine='$imagine', continut='$continut', tags='$tags' WHERE id = '$update_comunicate_id'";
 
 
                                 $query = mysqli_query($connection, $sql);
@@ -119,7 +145,7 @@
 
 
                             <script type="text/javascript">
-                                window.location = "admin-comunicate.php";
+                                window.location = "comunicate.php";
                             </script>
 
                         <?php
@@ -137,10 +163,19 @@
                             <label for="nume">Titlu: </label>
                             <input type="text" value = "<?php echo $comunicate_titlu; ?>" name="titlu" id="titlu">
 
+
+
+                            <label for="imagine">Imagine: (ATENTIE: maxim 2mb)</label>
+                            <img width="100" src="../images/comunicate/<?php echo $comunicate_fotografie; ?>" alt="">
+                            <input type="file" name="imagine" id="imagine">
+
                             <label for="editor">Continut: </label>
-                            <textarea cols="100" rows="12"  id="summernote"  name="content"><?php echo $comunicate_continut; ?>
+                            <textarea cols="100" rows="12"  id="editor"  class="ckeditor" name="content"><?php echo $comunicate_continut; ?>
 
                             </textarea>
+
+                            <label for="nume">Taguri: </label>
+                            <input type="text" value = "<?php echo $comunicate_tags; ?>" name="tags" id="tags">
 
                             <label></label>
                             <input name="submit" type="submit" value="Modifica" class="btn btn-primary" >
@@ -196,12 +231,16 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <script src="dist/summernote.min.js"></script>
     <script>
-    $(document).ready(function() {
-        $('#summernote').summernote();
-    });
-  </script>
+        CKEDITOR.replace( 'editor',
+             {
+                 filebrowserBrowseUrl: 'ckfinder/ckfinder.html',
+                 filebrowserImageBrowseUrl: 'ckfinder/ckfinder.html?type=Images',
+                 filebrowserUploadUrl: 'ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+                 filebrowserImageUploadUrl: 'ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images'
+             });
+    </script>
+
 </body>
 
 </html>

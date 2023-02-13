@@ -30,11 +30,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-  <link href="dist/summernote.min.css" rel="stylesheet">
-
+    <script src="//cdn.ckeditor.com/4.11.1/full/ckeditor.js"></script>
 
 </head>
 
@@ -68,7 +64,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Comunicate de presa
+                            Comunicate
 
                         </h1>
 
@@ -82,19 +78,20 @@
                             <tr>
                              <th>Nume</th>
                              <th>Categorie</th>
-                            </tr>
+                             <th>Foto</th>
+                             </tr>
 
 
                             <?php
-                                require 'include-admin/db.php';
+                                include 'include-admin/db.php';
 
                                 $query = "SELECT * FROM comunicate";
-                                $select_all_cod = mysqli_query($connection,$query);
+                                $select_all_comunicate = mysqli_query ($connection,$query);
 
-
-                                while ($row = mysqli_fetch_assoc($select_all_cod)) {
+                                while ($row = mysqli_fetch_assoc($select_all_comunicate)) {
                                     $comunicate_categorie = $row['categorie'];
                                     $comunicate_titlu = $row['titlu'];
+                                    $comunicate_fotografie = $row['imagine'];
                                     $comunicate_id = $row['id'];
                                 ?>
 
@@ -105,8 +102,9 @@
                              <tr>
                                 <td><?php echo $comunicate_titlu; ?></td>
                                 <td><?php echo $comunicate_categorie; ?></td>
-                                <td><a href="admin-comunicate-delete.php?delete=<?php echo $cod_id ?>" class="btn btn-danger" onclick="return confirm('Sigur vrei sa stergi?')">Stergere</a></td>
-                                 <td><a href="admin-comunicate-edit.php?update=<?php echo $cod_id ?>" class="btn btn-success">Modifica</a></td>
+                                <td><img src="../images/comunicate/<?php echo $comunicate_fotografie; ?>" style="max-width:50px"></td>
+                                <td><a href="admin-comunicate-delete.php?delete=<?php echo $comunicate_id ?>" class="btn btn-danger" onclick="return confirm('Sigur vrei sa stergi?')">Stergere</a></td>
+                                 <td><a href="admin-comunicate-edit.php?update=<?php echo $comunicate_id ?>" class="btn btn-success">Modifica</a></td>
                              </tr>
 
                               <?php
@@ -124,7 +122,7 @@
 
 
                     <div class="col-md-12">
-                        <h2>Adauga textul</h2>
+                        <h2>Adauga articol</h2>
                         <form action="admin-comunicate-adauga.php" method="post" enctype="multipart/form-data">
 
                             <label for="categoria">Categoria: </label>
@@ -133,8 +131,14 @@
                             <label for="nume">Titlu: </label>
                             <input type="text" name="nume" id="nume">
 
+                            <label for="imagine">Imagine: (ATENTIE: maxim 2mb) </label>
+                            <input type="file" name="imagine" id="imagine">
+
                             <label for="editor">Continut: </label>
-                            <textarea cols="100" rows="12" id="summernote" name="content"></textarea>
+                            <textarea cols="100" rows="12"  id="editor"  class="ckeditor" name="content"></textarea>
+
+                            <label for="nume">Taguri: </label>
+                            <input type="text" name="tags" id="tags">
 
                             <label></label>
                             <input name="submit" type="submit" value="Adauga" class="btn btn-primary">
@@ -142,12 +146,6 @@
 
                         </form>
                     </div>
-
-
-
-
-
-
 
 
 
@@ -168,12 +166,16 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="dist/summernote.min.js"></script>
+
     <script>
-    $(document).ready(function() {
-        $('#summernote').summernote({placeholder: 'completeaza...'});
-    });
-  </script>
+        CKEDITOR.replace( 'editor',
+             {
+                 filebrowserBrowseUrl: 'ckfinder/ckfinder.html',
+                 filebrowserImageBrowseUrl: 'ckfinder/ckfinder.html?type=Images',
+                 filebrowserUploadUrl: 'ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+                 filebrowserImageUploadUrl: 'ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images'
+             });
+    </script>
 
 </body>
 

@@ -30,7 +30,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link href="dist/summernote.min.css" rel="stylesheet">
+    <script src="//cdn.ckeditor.com/4.11.1/full/ckeditor.js"></script>
 
 </head>
 
@@ -63,7 +63,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                          Comunicate de presa
+                            Comunicate
 
                         </h1>
 
@@ -72,23 +72,37 @@
                     <div class="col-md-12">
 
 
-                        <?php
 
 
-                                require 'include-admin/db.php';
+                          <?php
+
+                           include "include-admin/db.php";
 
                                 $categorie = $_POST['categorie'];
                                 $name = $_POST['nume'];
+                                $imagine = $_FILES['imagine']['name'];
+                                $imagine_tmp = $_FILES['imagine']['tmp_name'];
+                                $imagine_size = $FILES['imagine']['size'];
                                 $continut = mysqli_real_escape_string($connection, $_POST['content']);
+                                $tags = $_POST['tags'];
+                                $data = date("Y.m.d");
 
 
                                 if (isset($_POST['submit'])) {
 
-                                    $sql = "INSERT INTO comunicate (titlu, categorie, continut) VALUE ('$name', '$categorie', '$continut')";
+                                    $target = "../images/comunicate/" . basename($_FILES['imagine']['name']);
+
+                                    if (move_uploaded_file($_FILES['imagine']['tmp_name'], $target)) {
+                                            $msg = "Image uploaded successfully";
+                                            $sql = "INSERT INTO comunicate (categorie,titlu,imagine,continut,tags,date) VALUE ('$categorie', '$name', '$imagine', '$continut', '$tags', '$data')";
                                             $query = mysqli_query($connection, $sql);
 
+                                        }  else {
+                                            $msg = "Eroare la incarcare imagine. Probabil s-a depasit dimensiunea de 2mb.";
+                                            echo $msg;
+                                        }
 
-                                    if ($query) {
+                                        if ($query) {
                                             echo 'Articol adaugat cu succes.';
                                         } else {
                                             echo 'Eroare la adaugare in baza de date.';
@@ -98,11 +112,13 @@
 
 
 
+
+
+
                                 mysqli_close($connection);
 
 
                             ?>
-
                     </div>
 
 
@@ -133,12 +149,15 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-   <script src="dist/summernote.min.js"></script>
     <script>
-    $(document).ready(function() {
-        $('#summernote').summernote();
-    });
-  </script>
+        CKEDITOR.replace( 'editor',
+             {
+                 filebrowserBrowseUrl: 'ckfinder/ckfinder.html',
+                 filebrowserImageBrowseUrl: 'ckfinder/ckfinder.html?type=Images',
+                 filebrowserUploadUrl: 'ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+                 filebrowserImageUploadUrl: 'ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images'
+             });
+    </script>
 
 </body>
 
